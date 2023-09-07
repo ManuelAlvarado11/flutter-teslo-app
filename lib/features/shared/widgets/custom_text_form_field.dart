@@ -49,7 +49,7 @@ class CustomTextFormField extends StatelessWidget {
       child: TextFormField(
         onChanged: onChanged,
         validator: validator,
-        onFieldSubmitted: (value) => onFieldSubmitted,
+        onFieldSubmitted: onFieldSubmitted,
         obscureText: obscureText,
         keyboardType: keyboardType,
         style: const TextStyle(fontSize: 20, color: Colors.black54),
