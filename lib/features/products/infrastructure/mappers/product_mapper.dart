@@ -15,7 +15,7 @@ class ProductMapper {
         gender: json['gender'],
         images: List<String>.from(
           json['images'].map(
-            (String image) => image.startsWith('http')
+            (image) => image.startsWith('http')
                 ? image
                 : '${Environment.apiUrl}/files/product/$image',
           ),
